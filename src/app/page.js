@@ -42,10 +42,10 @@ export default function Home() {
     });
 
     //Cambio el estado para mostrar los cusos filtrados
-    if (text === "") {
-      setSearch([]);
-      return;
-    }
+    // if (text === "") {
+    //   setSearch([]);
+    //   return;
+    // }
 
     // cambio el estado para mostrar los cursos filtrados
     setSearch(filtered);
@@ -56,7 +56,10 @@ export default function Home() {
       <input type="text" onKeyUp={handleSearch} />
       <ul>
         {search.map((element, i) => (
+          // <div key={i}>
+
           <li key={i}>{element}</li>
+          // </div>
         ))}
       </ul>
     </main>
