@@ -1,0 +1,38 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+    padding: 0 10px;
+}
+
+/*Last div which has the img element*/
+nav > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > div > ul {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    
+    nav {
+        height: 10vh;
+        padding: 0 20px;
+        /* display: flex;
+        align-items: center; */
+    }
+
+    nav > div > img{
+        display: none;
+    }
+    nav > div > ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        gap: 2rem;
+    }
+}
